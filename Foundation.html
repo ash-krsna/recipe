@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pandurang Pratishthan - Empowering Communities</title>
+
+  <!-- Bootstrap Icons CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+
+  <style>
+    /* Reset & base */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #007b5e;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0.2rem 0;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 0;
+      font-size: 1.1rem;
+      font-style: italic;
+      opacity: 0.85;
+    }
+
+    nav {
+      background: #004d40;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+
+    nav a {
+      color: #b2dfdb;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    nav a:hover {
+      color: #e0f2f1;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    main img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #007b5e;
+      border-bottom: 3px solid #004d40;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #007b5e;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e0f2f1;
+      font-size: 0.9rem;
+      color: #004d40;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pandurang Pratishthan</h1>
+    <p>Empowering Communities, Enriching Lives</p>
+  </header>
+
+  <nav>
+    <a href="#about"><i class="bi bi-info-circle"></i> About</a>
+    <a href="#projects"><i class="bi bi-lightbulb"></i> Projects</a>
+    <a href="#contact"><i class="bi bi-envelope"></i> Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+        alt="Community Helping Hands"
+      />
+      <p>
+        Pandurang Pratishthan is a non-profit organization dedicated to uplifting underprivileged communities through education,
+        health, and sustainable development programs. Since our inception, we have been committed to bringing positive change
+        to the lives of many by empowering individuals with knowledge and resources.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Our Projects</h2>
+      <ul>
+        <li><i class="bi bi-check-circle-fill" style="color:#007b5e;"></i> Community Education Programs</li>
+        <li><i class="bi bi-check-circle-fill" style="color:#007b5e;"></i> Health & Hygiene Workshops</li>
+        <li><i class="bi bi-check-circle-fill" style="color:#007b5e;"></i> Sustainable Agriculture Initiatives</li>
+        <li><i class="bi bi-check-circle-fill" style="color:#007b5e;"></i> Women Empowerment Drives</li>
+      </ul>
+      <button id="donateBtn">
+        <i class="bi bi-heart-fill"></i> Donate Now
+      </button>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Email: <a href="mailto:info@pandurangpratishthan.org">info@pandurangpratishthan.org</a><br />
+        Phone: +91 98765 43210<br />
+        Address: 123 Green Lane, Pune, Maharashtra, India
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Pandurang Pratishthan. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('donateBtn').addEventListener('click', () => {
+      alert('Thank you for your interest in donating! Our team will contact you shortly.');
+    });
+  </script>
+</body>
+</html>
